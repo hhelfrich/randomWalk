@@ -2,6 +2,7 @@ import numpy as np
 import math
 import random
 
+
 def step(pos, N, mu, sigma):
     dx = np.random.normal(mu, sigma, N)
     dy = np.random.normal(mu, sigma, N)
@@ -12,7 +13,7 @@ def step(pos, N, mu, sigma):
     return pos
 
 pos = [0.0, 0.0, 0.0]
-pos = step(pos, 100000000, 0.0, 0.00577)
+pos = step(pos, 100000000, 0.0, 57.735)
 print(pos[0], ", ", pos[1], ", ", pos[2])
 
     
